@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>TIC TAC TOE</h1>
+
+        <div id="controls" class="controls">
+            <div id="controls-difficulty" class="controls-difficulty">
+                <label for="difficulty-select">Select Difficulty:</label>
+                <select id="difficulty-select" class="difficulty-select">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+            
+            <div id="controls-start" class="controls-start">
+                <button id="start-button" class="start-button">Start New Game</button>
+            </div>
+        </div>
+
+        <div class="board" id="board">
+            <div class="cell" id="cell-0"></div>
+            <div class="cell" id="cell-1"></div>
+            <div class="cell" id="cell-2"></div>
+            <div class="cell" id="cell-3"></div>
+            <div class="cell" id="cell-4"></div>
+            <div class="cell" id="cell-5"></div>
+            <div class="cell" id="cell-6"></div>
+            <div class="cell" id="cell-7"></div>
+            <div class="cell" id="cell-8"></div>
+        </div>
+        
+        <div id="status" class="status">
+            Press 'Start New Game' to begin!
+        </div>
+
+        <div id="controls-name" class="controls-name">
+            NOTE: Player is always 'X' and goes first.
+        </div>
+
+    </div>
+
+    <script src="../js/game-config.js"></script>
+    <script src="../js/game.js"></script>
+    <script src="../js/board-analysis.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+</html>
