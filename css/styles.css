@@ -1,0 +1,86 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    font-family: "Press Start 2P", cursive;
+}
+
+h1 {
+    color: indigo;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.controls {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.controls-name {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+} 
+
+.controls-difficulty {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.difficulty-select {
+    padding: 4px;
+    background-color: lavender;
+    border-radius: 3px 10px 3px 10px;
+}
+
+.controls-start {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.start-button {
+    background-color: indigo; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px 3px 10px 3px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-rows: repeat(3, 1fr); /* 3 equal rows */
+    width: 300px;
+    height: 300px;
+    border: none;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+#board .cell {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    border: 1px solid black; /* Border around each cell */
+    box-sizing: border-box;
+    font-size: 2.5rem; /* Adjust font size as needed */
+}
+
+.status {
+    width: 300px;
+    text-align: center;
+    font-size: 1.0rem;
+    font-family: monospace, sans-serif;
+    margin: 15px auto;
+    padding: 10px 0px;
+    background-color: lavender;
+}
+
