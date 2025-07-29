@@ -109,6 +109,7 @@
          */
         handleUserMove: (e, i) => {
             const cell = e.target;
+            
             // If not in an active game, do nothing.
             if (!game.inGame || game.boardLocked) {
                 return;
@@ -116,7 +117,15 @@
             // If in an active game, make the move in the cell.
             game.makePlayerMove(i);
         },
-        
+
+        addMoveListener: (i) => {
+            game.$cells[i].addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                game.handleUserMove(e, i);
+            });
+        },
+
         /**
          * Listens for events on the game controls and cells.
          */
@@ -125,9 +134,7 @@
                 game.setupGame();
             });
             for (let i = 0; i < game.$cells.length; i += 1) {
-                game.$cells[i].addEventListener('click', (e) => {
-                    game.handleUserMove(e, i);
-                });
+                game.addMoveListener(i);
             }
         },
 
