@@ -5,6 +5,9 @@ Uses a simple rules-based AI with three difficulty levels. At this time, it does
 calculations of forks or patterns, but does try to grab the center, go for winning moves, block winning
 moves, and check for empty corner squares if the center is taken and no near-wins are imminent.
 
+## Example
+[Play Game](http://jp.42web.io/projects/Solo-Tic-Tac-Toe/html/index.html)
+
 ## Configuration
 
 There is a *game-config.js* file in the *js* folder which contains default configurations. At this time,
